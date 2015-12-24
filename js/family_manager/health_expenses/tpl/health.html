@@ -1,0 +1,15 @@
+<div ng-controller="HealthHomeCtrl">
+  <uib-tabset>
+	<uib-tab heading="Overview">
+	  <div ui-grid="{ data: myData }" class="standardGrid"></div>
+	</uib-tab>
+	<uib-tab heading="To pay">
+	  <div ng-controller="FamilyManager.Health.ToPayCtrl">
+		<div ui-grid="{ data:invoicesToPay }" class="standardGrid"></div>
+	  </div>
+	</uib-tab>
+	<uib-tab heading="To send">bla bla</uib-tab>
+	<uib-tab heading="Reimbursed">Reim</uib-tab>
+	<uib-tab heading="Insurances">Insurances</uib-tab>
+  </uib-tabset>
+</div>
